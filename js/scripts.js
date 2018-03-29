@@ -1,19 +1,37 @@
 var add = function(number1, number2) {
-     return number1 + number2;
-   };
- alert(add(10, 5));
-  var add = function(number1, number2) {
-       return number1 + number2;
-     };
+      return number1 + number2;
+    };
 
-     var number1 = prompt("Enter a number:");
+    var subtract = function(number1, number2) {
+      return number1 - number2;
+    };
 
-     alert(number1);
-     var add = function(number1, number2) {
-       return number1 + number2;
-     };
+    var multiply = function(number1, number2) {
+      return number1 * number2;
+    };
 
-     var number1 = parseInt(prompt("Enter a number:"));
-     var number2 = parseInt(prompt("Enter another number:"));
+    var divide = function(number1, number2) {
+      return number1 / number2;
+    };
 
-     alert(add(number1, number2));
+    $(document).ready(function() {
+      $("form#add").submit(function(event){
+        event.preventDefault();
+        var number1 = parseInt($("#add1").val());
+        var number2 = parseInt($("#add2").val());
+        alert(add(number1, number2));
+        var resultadd = add(number1,number2)
+        console.log(add(number1,number2));
+        var resultadd = (number1,number2);
+        $("form#add").after();
+      });
+    });
+    var subtract = function(number1, number2) {
+      return number1 - number2;
+
+    };
+    $(document).ready(function() {
+      $("form#add").submit(function(event){
+        event.preventDefault();
+        var number1 = parseInt($("#add1").val());
+        var number2 = parseInt($("#add2").val())
